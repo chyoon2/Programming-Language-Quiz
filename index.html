@@ -5,57 +5,61 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>INSERT TITLE HERE</title>
+    <title>Code Quiz</title>
   </head>
   <body>
     <div class="container">
       <div class ="jumbotron">
         <h1>Programming Language Quiz</h1>
       </div>
-      <div>
+      
+
         <form id="quiz">
+
           <div class="form-group">
-            <div class="form-group">
-              <label for="android-ios">Do you prefer...</label> 
-              <div class="radio">
-                <label>
-                  <input type="radio" name="android-ios" value="android" checked>
-                  Android
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="android-ios" value="ios">
+            <label for="android-ios">Do you prefer...</label> 
+            <div class="radio">
+              <label>
+                <input type="radio" name="android-ios" value="android" checked>
+                Android
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="android-ios" value="ios">
                   Ios
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="android-ios" value="no-pref">
-                  No preference
-                </label>
-              </div>
-            </div>
-            <label for="mobile-web">Where do you want to see your work?</label> 
-            <div class="radio">
-              <label>
-                <input type="radio" name="mobile-web" value="mobile" checked>
-                Mobile
-              </label>
+              </label>              
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="mobile-web" value="web">
-                Web
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="mobile-web" value="no-pref">
+                <input type="radio" name="android-ios" value="no-pref">
                 No preference
               </label>
             </div>
           </div>
+
+            <div class="form-group">
+              <label for="mobile-web">Where do you want to see your work?</label> 
+                <div class="radio">
+              <label>
+                <input type="radio" name="mobile-web" value="mobile" checked>
+                Mobile
+              </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mobile-web" value="web">
+                  Web
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="mobile-web" value="no-pref">
+                  No preference
+                </label>
+              </div>
+            </div>
+
           <div class="form-group">
             <label for="front-back">Do you want to work on the...</label> 
             <div class="radio">
@@ -77,6 +81,7 @@
               </label>
             </div>
           </div>
+
           <div class="form-group">
             <label for="difficulty">Choose a difficulty level:</label> 
             <div class="radio">
@@ -104,6 +109,7 @@
               </label>
             </div>
           </div>
+
           <div class="form-group">
             <label for="logo">Do you prefer...</label> 
             <div class="radio">
@@ -131,9 +137,10 @@
               </label>
             </div>
           </div>
+          <button type="submit" class="btn btn-success">Submit!</button>
         </form>
-        <button type="submit" class="btn btn-success">Submit!</button>
-        <div id="output">
+        
+      
           <p>Your programming language is...</p> 
           <div id="c">
             <p>C#</p>
@@ -148,7 +155,7 @@
             <p>Swift</p>
           </div>
 
-        </div> 
+        
       
       </div>
     
