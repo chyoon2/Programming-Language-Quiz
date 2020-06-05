@@ -7,12 +7,10 @@ $(document).ready(function() {
     const frontBack = $("input:radio[name=front-back]:checked").val();
     const difficulty = $("input:radio[name=difficulty]:checked").val();
     const logo = $("input:radio[name=logo]:checked").val();
-    
     let codingLanguage;
-    
     businessLogic();
     $(".language").text(codingLanguage);
-
+    
     function businessLogic () {
       if(androidIos === "android") {
         if(mobileWeb === "mobile") {

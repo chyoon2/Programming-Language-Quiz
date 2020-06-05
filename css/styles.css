@@ -10,22 +10,26 @@ h1 {
   text-align: center;
 }
 .form-group {
-  font-size: 15px;
+  font-size: 20px;
+  padding: 15px;
 }
 #c {
   float: left;
   text-align: center;
   font-size: 15px;
+  padding-right: 4%;
 }
 #javascript {
   float: left;
   text-align: center;
   font-size: 15px;
+  padding-right: 5%;
 }
 #python {
   float: left;
   text-align: center;
   font-size: 15px;
+  padding-right: 5%;
 }
 #swift {
   float: left;
@@ -38,4 +42,7 @@ body {
 .language {
   font-size: 40px;
   color: red;
+}
+#output {
+  padding: 1%;
 }
