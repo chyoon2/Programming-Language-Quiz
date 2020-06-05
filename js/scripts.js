@@ -11,18 +11,20 @@ $(document).ready(function() {
     let logo = $("input:radio[name=logo]:checked").val();
     
     if(androidIos === "android"){//if this is true do not show swift
-      if(mobileWeb === "web") {//if this is true do not show javascript
+      if(mobileWeb === "mobile") {//if this is true do not show javascript
         if (difficulty != "easy"){ //do not show python/javascript/swift)
             $("#c").show();
+          } else {
+            if (logo === "snakes" || logo === "coffee") {
+            $("#python").show();
+            } else if (logo === "musical" || logo === "birds"){
+              $("#c").show();
+            } 
           }
-        } else {
-          if (logo === "snakes" || logo === "coffee") { //finishes the easy path
-          $("#python").show();
-          } else if (logo === "musical" || logo === "birds"){
-            $("#c").show();
-          }
-        }
-      } 
+      } else if (mobileWeb === "web"){ //showing javascript
+        
+
+      }
     } else{
       $("#swift").show();
     }
