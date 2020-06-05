@@ -1,12 +1,15 @@
-#c{
+.form-group {
+  font-size: 15px;
+}
+#c {
   display: none;
 }
-#javascript{
+#javascript {
   display: none;
 }
-#python{
+#python {
   display: none;
 }
-#swift{
+#swift {
   display: none;
 }
