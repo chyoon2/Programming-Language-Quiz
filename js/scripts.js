@@ -17,7 +17,7 @@ $(document).ready(function() {
       if(androidIos === "android") {
         if(mobileWeb === "mobile") {
           if (difficulty != "easy") {
-            codingLanguage = "C#"; 
+            codingLanguage = "C#";
           } 
           else {
             if (logo === "snakes" || logo === "coffee") {

@@ -1,15 +1,31 @@
+img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.jumbotron{
+  background-color: orange;
+  color: aliceblue;
+  ;
+}
+h1 {
+  text-align: center;
+}
 .form-group {
   font-size: 15px;
 }
 #c {
-  display: none;
+  float: left;
 }
 #javascript {
-  display: none;
+  float: left;
 }
 #python {
-  display: none;
+  float: left;
 }
 #swift {
-  display: none;
+  float: left;
+}
+img {
+  max-width: 100;
+  max-height: 100;
 }
