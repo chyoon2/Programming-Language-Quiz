@@ -10,31 +10,21 @@ $(document).ready(function() {
     let difficulty = $("input:radio[name=difficulty]:checked").val();
     let logo = $("input:radio[name=logo]:checked").val();
     
-    if(androidIos === "ios"){
-      $("#swift").show();
-    } else{
-      if(mobileWeb === "mobile") {//if this is true do not show javascript
-        if (difficulty != "easy"){ //do not show python
-          if(logo === "birds"){
-            $("#swift").show();
-          } else if (logo ==="musical") {
+    if(androidIos === "android"){//if this is true do not show swift
+      if(mobileWeb === "web") {//if this is true do not show javascript
+        if (difficulty != "easy"){ //do not show python/javascript/swift)
             $("#c").show();
           }
         } else {
-          if (logo === "snakes") {
+          if (logo === "snakes" || logo === "coffee") { //finishes the easy path
           $("#python").show();
-          } else if (logo === "birds"){
-            $("#swift").show();
-          } else if (logo === "musical"){
+          } else if (logo === "musical" || logo === "birds"){
             $("#c").show();
           }
         }
-      }
       } 
-      //else if (mobileWeb === web) { if this true do not show swift
-
-      // }
-
-      // }
+    } else{
+      $("#swift").show();
+    }
   });
 });
