@@ -13,8 +13,29 @@
         <h1>Programming Language Quiz</h1>
       </div>
       <div>
-        <form id="form-one">
+        <form id="quiz">
           <div class="form-group">
+            <div class="form-group">
+              <label for="android-ios">Do you prefer...</label> 
+              <div class="radio">
+                <label>
+                  <input type="radio" name="android-ios" value="android" checked>
+                  Android
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="android-ios" value="ios">
+                  Ios
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="android-ios" value="no-pref">
+                  No preference
+                </label>
+              </div>
+            </div>
             <label for="mobile-web">Where do you want to see your work?</label> 
             <div class="radio">
               <label>
@@ -31,27 +52,6 @@
             <div class="radio">
               <label>
                 <input type="radio" name="mobile-web" value="no-pref">
-                No preference
-              </label>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="andriod-ios">Do you prefer...</label> 
-            <div class="radio">
-              <label>
-                <input type="radio" name="andriod-ios" value="andoid" checked>
-                Andoid
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="andriod-ios" value="ios">
-                Ios
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="andriod-ios" value="no-pref">
                 No preference
               </label>
             </div>
@@ -81,20 +81,26 @@
             <label for="difficulty">Choose a difficulty level:</label> 
             <div class="radio">
               <label>
-                <input type="radio" name="difficulty" value="front" checked>
+                <input type="radio" name="difficulty" value="easy" checked>
                 Easy
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="difficulty" value="front">
-                Medium
+                <input type="radio" name="difficulty" value="moderate">
+                Moderate
               </label>
             </div>
             <div class="radio">
               <label>
                 <input type="radio" name="difficulty" value="hard">
                 Hard
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="difficulty" value="no-pref">
+                No preference
               </label>
             </div>
           </div>
