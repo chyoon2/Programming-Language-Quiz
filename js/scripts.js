@@ -69,19 +69,18 @@ $(document).ready(function() {
       }
     }
     function show(){
-    if (codingLanguage === "C#") {
-      $("#c").show();
+      if (codingLanguage === "C#") {
+        $("#c").show();
+      }
+      else if (codingLanguage === "Python") {
+        $("#python").show();
+      }
+      else if (codingLanguage === "JavaScript") {
+        $("#javascript").show();
+      }
+      else {
+        $("#swift").show();
+      }
     }
-    else if (codingLanguage === "Python") {
-      $("#python").show();
-    }
-    else if (codingLanguage === "JavaScript") {
-      $("#javascript").show();
-    }
-    else {
-      $("#swift").show();
-    }
-  }
-
   });
 });
