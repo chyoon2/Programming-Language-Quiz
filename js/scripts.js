@@ -22,7 +22,24 @@ $(document).ready(function() {
             } 
           }
       } else if (mobileWeb === "web"){ //showing javascript
-        
+          if (frontBack === "back") { //no longer js
+            if (difficulty !=easy){ //no python
+              $("#c").show();
+            } else if (){ //with python
+              if (logo === "snakes" || logo === "coffee") {
+                $("#python").show();
+                } else if (logo === "musical" || logo === "birds"){
+                  $("#c").show();
+                } 
+            }
+          }else if (frontBack === "front"){ //showing js
+            if (difficulty !=easy){ //no python
+
+            } else if (){ //js c python
+
+            }
+
+          }
 
       }
     } else{
