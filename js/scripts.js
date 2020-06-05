@@ -10,7 +10,8 @@ $(document).ready(function() {
     let codingLanguage;
     businessLogic();
     $(".language").text(codingLanguage);
-    
+    show();
+
     function businessLogic () {
       if(androidIos === "android") {
         if(mobileWeb === "mobile") {
@@ -67,5 +68,20 @@ $(document).ready(function() {
         codingLanguage = "Swift";
       }
     }
+    function show(){
+    if (codingLanguage === "C#") {
+      $("#c").show();
+    }
+    else if (codingLanguage === "Python") {
+      $("#python").show();
+    }
+    else if (codingLanguage === "JavaScript") {
+      $("#javascript").show();
+    }
+    else {
+      $("#swift").show();
+    }
+  }
+
   });
 });

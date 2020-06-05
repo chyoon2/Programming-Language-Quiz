@@ -18,23 +18,27 @@ h1 {
   text-align: center;
   font-size: 15px;
   padding-right: 4%;
+  display: none;
 }
 #javascript {
   float: left;
   text-align: center;
   font-size: 15px;
   padding-right: 5%;
+  display: none;
 }
 #python {
   float: left;
   text-align: center;
   font-size: 15px;
   padding-right: 5%;
+  display: none;
 }
 #swift {
   float: left;
   text-align: center;
   font-size: 15px;
+  display: none;
 }
 body {
   background-color: whitesmoke);
